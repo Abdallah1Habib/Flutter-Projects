@@ -10,6 +10,9 @@ class beboBody extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 24),
       child: Column(
         children: [
+          SizedBox(
+            height: 50,
+          ),
           customAppbar(),
         ],
       ),
