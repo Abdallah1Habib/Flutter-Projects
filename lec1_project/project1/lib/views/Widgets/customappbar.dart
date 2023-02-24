@@ -15,3 +15,17 @@ class customAppbar extends StatelessWidget {
     );
   }
 }
+
+class customsearchicon extends StatelessWidget {
+  const customsearchicon({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 45,
+      width: 45,
+      decoration: const BoxDecoration(color: Colors.white),
+      child: Center(child: Icon(Icons.search)),
+    );
+  }
+}
