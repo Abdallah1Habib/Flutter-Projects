@@ -6,10 +6,13 @@ class beboBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        customAppbar(),
-      ],
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 24),
+      child: Column(
+        children: [
+          customAppbar(),
+        ],
+      ),
     );
   }
 }
