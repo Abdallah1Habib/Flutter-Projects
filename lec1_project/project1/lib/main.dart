@@ -8,7 +8,8 @@ class beboApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ,
+      theme: ThemeData.dark(),
+      home: Scaffold(),
     );
   }
 }
