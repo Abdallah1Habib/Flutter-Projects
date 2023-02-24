@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project1/views/bebo_views.dart';
 
 void main() => beboApp();
 
@@ -9,7 +10,7 @@ class beboApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark(),
-      home: Scaffold(),
+      home: const BeboViews(),
     );
   }
 }
