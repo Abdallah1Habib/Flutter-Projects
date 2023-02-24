@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'Widgets/body.dart';
 
 class BeboViews extends StatelessWidget {
   const BeboViews({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return const beboBody();
   }
 }
