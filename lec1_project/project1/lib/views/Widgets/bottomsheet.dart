@@ -13,7 +13,16 @@ class Addnote extends StatelessWidget {
           SizedBox(
             height: 32,
           ),
-          customtextfield()
+          customtextfield(
+            hint: 'Title',
+          ),
+          SizedBox(
+            height: 16,
+          ),
+          customtextfield(
+            hint: 'Content',
+            lines: 5,
+          ),
         ],
       ),
     );
