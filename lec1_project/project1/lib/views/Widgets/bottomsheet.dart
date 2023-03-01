@@ -59,7 +59,14 @@ class _addnoteformState extends State<addnoteform> {
           const SizedBox(
             height: 32,
           ),
-          const custombutton(),
+          custombutton(onTap: () {
+            if (formk.currentState!.validate()) {
+              formk.currentState!.save();
+            } else {
+              autovalidateMode = AutovalidateMode.always;
+              setState(() {});
+            }
+          }),
         ],
       ),
     );
