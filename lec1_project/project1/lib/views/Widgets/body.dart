@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:project1/views/Widgets/customappbar.dart';
 import 'package:project1/views/Widgets/noteitem.dart';
 
+import 'listview.dart';
+
 class beboBody extends StatelessWidget {
   const beboBody({super.key});
 
@@ -19,20 +21,5 @@ class beboBody extends StatelessWidget {
         ],
       ),
     );
-  }
-}
-
-class noteslist extends StatelessWidget {
-  const noteslist({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return ListView.builder(itemBuilder: (context, index) {
-      // ignore: prefer_const_constructors
-      return Padding(
-        padding: const EdgeInsets.symmetric(vertical: 8),
-        child: const noteItem(),
-      );
-    });
   }
 }
