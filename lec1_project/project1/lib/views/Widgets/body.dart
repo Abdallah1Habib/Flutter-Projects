@@ -48,9 +48,12 @@ class noteItem extends StatelessWidget {
             ),
           ),
         ),
-        Text(
-          "March1 , 2023",
-          style: TextStyle(color: Colors.black.withOpacity(.4)),
+        Padding(
+          padding: const EdgeInsets.only(right: 24),
+          child: Text(
+            "March1 , 2023",
+            style: TextStyle(color: Colors.black.withOpacity(.4)),
+          ),
         ),
       ]),
     );
