@@ -42,7 +42,11 @@ class noteItem extends StatelessWidget {
             onPressed: () {},
             icon: Icon(Icons.delete),
           ),
-        )
+        ),
+        Text(
+          "March1 , 2023",
+          style: TextStyle(color: Colors.black),
+        ),
       ]),
     );
   }
