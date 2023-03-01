@@ -26,6 +26,7 @@ class noteItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: const EdgeInsets.only(top: 24, bottom: 24, left: 16),
       decoration: BoxDecoration(
           color: const Color(0xffFFCC80),
           borderRadius: BorderRadius.circular(16)),
@@ -41,12 +42,15 @@ class noteItem extends StatelessWidget {
           ),
           trailing: IconButton(
             onPressed: () {},
-            icon: Icon(Icons.delete),
+            icon: Icon(
+              Icons.delete,
+              size: 30,
+            ),
           ),
         ),
         Text(
           "March1 , 2023",
-          style: TextStyle(color: Colors.black),
+          style: TextStyle(color: Colors.black.withOpacity(.4)),
         ),
       ]),
     );
