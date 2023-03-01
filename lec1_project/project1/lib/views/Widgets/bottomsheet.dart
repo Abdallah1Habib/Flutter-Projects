@@ -8,31 +8,47 @@ class Addnote extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 16),
       child: SingleChildScrollView(
-        child: Column(
-          children: const [
-            SizedBox(
-              height: 32,
-            ),
-            customtextfield(
-              hint: 'Title',
-            ),
-            SizedBox(
-              height: 16,
-            ),
-            customtextfield(
-              hint: 'Content',
-              lines: 5,
-            ),
-            SizedBox(
-              height: 32,
-            ),
-            custombutton(),
-          ],
-        ),
+        child: addnoteform(),
       ),
+    );
+  }
+}
+
+class addnoteform extends StatefulWidget {
+  const addnoteform({
+    super.key,
+  });
+
+  @override
+  State<addnoteform> createState() => _addnoteformState();
+}
+
+class _addnoteformState extends State<addnoteform> {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: const [
+        SizedBox(
+          height: 32,
+        ),
+        customtextfield(
+          hint: 'Title',
+        ),
+        SizedBox(
+          height: 16,
+        ),
+        customtextfield(
+          hint: 'Content',
+          lines: 5,
+        ),
+        SizedBox(
+          height: 32,
+        ),
+        custombutton(),
+      ],
     );
   }
 }
