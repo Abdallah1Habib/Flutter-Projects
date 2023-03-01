@@ -11,11 +11,14 @@ class editviewbody extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 24),
       child: Column(
-        children: [
+        children: const [
           SizedBox(
             height: 50,
           ),
-          customAppbar(),
+          customAppbar(
+            title: 'Notes',
+            icon: Icons.check,
+          ),
         ],
       ),
     );
