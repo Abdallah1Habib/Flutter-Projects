@@ -37,7 +37,7 @@ class noteItem extends StatelessWidget {
             style: TextStyle(color: Colors.black, fontSize: 26),
           ),
           subtitle: Padding(
-            padding: const EdgeInsets.only(top: 16),
+            padding: const EdgeInsets.only(top: 16, bottom: 16),
             child: Text(
               "Build your career with Abdallah Habib",
               style:
@@ -48,7 +48,7 @@ class noteItem extends StatelessWidget {
             onPressed: () {},
             icon: Icon(
               Icons.delete,
-              size: 30,
+              size: 24,
             ),
           ),
         ),
@@ -56,7 +56,7 @@ class noteItem extends StatelessWidget {
           padding: const EdgeInsets.only(right: 24),
           child: Text(
             "March1 , 2023",
-            style: TextStyle(color: Colors.black.withOpacity(.4)),
+            style: TextStyle(color: Colors.black.withOpacity(.4), fontSize: 14),
           ),
         ),
       ]),
