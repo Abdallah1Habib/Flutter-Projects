@@ -30,8 +30,14 @@ class noteItem extends StatelessWidget {
           color: Colors.yellow, borderRadius: BorderRadius.circular(16)),
       child: Column(children: [
         ListTile(
-          title: Text("Flutter Tips"),
-          subtitle: Text("Build your career with Abdallah Habib"),
+          title: Text(
+            "Flutter Tips",
+            style: TextStyle(color: Colors.black),
+          ),
+          subtitle: Text(
+            "Build your career with Abdallah Habib",
+            style: TextStyle(color: Colors.black),
+          ),
           trailing: IconButton(
             onPressed: () {},
             icon: Icon(Icons.delete),
