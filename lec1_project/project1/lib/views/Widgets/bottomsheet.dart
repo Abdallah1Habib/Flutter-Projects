@@ -40,7 +40,12 @@ class custombutton extends StatelessWidget {
       height: 55,
       decoration: BoxDecoration(
           color: primarycolor, borderRadius: BorderRadius.circular(8)),
-      child: const Center(child: Text('Save')),
+      child: const Center(
+          child: Text(
+        'Add',
+        style: TextStyle(
+            color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),
+      )),
     );
   }
 }
