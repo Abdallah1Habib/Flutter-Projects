@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project1/views/Widgets/constants.dart';
 import 'package:project1/views/Widgets/textfield.dart';
 
 class Addnote extends StatelessWidget {
@@ -36,6 +37,10 @@ class custombutton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
+      height: 55,
+      decoration: BoxDecoration(
+          color: primarycolor, borderRadius: BorderRadius.circular(8)),
+      child: const Center(child: Text('Save')),
     );
   }
 }
