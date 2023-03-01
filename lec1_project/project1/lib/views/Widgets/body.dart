@@ -19,3 +19,12 @@ class beboBody extends StatelessWidget {
     );
   }
 }
+
+class noteItem extends StatelessWidget {
+  const noteItem({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
