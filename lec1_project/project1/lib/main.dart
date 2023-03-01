@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:project1/views/Widgets/constants.dart';
 import 'package:project1/views/bebo_views.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 void main() async {
   await Hive.initFlutter();
+  await Hive.openBox(boxname);
   runApp(const beboApp());
 }
 
