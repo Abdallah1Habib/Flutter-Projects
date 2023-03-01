@@ -36,24 +36,30 @@ class _addnoteformState extends State<addnoteform> {
       key: formk,
       autovalidateMode: autovalidateMode,
       child: Column(
-        children: const [
-          SizedBox(
+        children: [
+          const SizedBox(
             height: 32,
           ),
           customtextfield(
+            onSave: (value) {
+              title = value;
+            },
             hint: 'Title',
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
           customtextfield(
+            onSave: (value) {
+              subtitle = value;
+            },
             hint: 'Content',
             lines: 5,
           ),
-          SizedBox(
+          const SizedBox(
             height: 32,
           ),
-          custombutton(),
+          const custombutton(),
         ],
       ),
     );
