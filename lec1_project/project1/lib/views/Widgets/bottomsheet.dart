@@ -29,26 +29,28 @@ class addnoteform extends StatefulWidget {
 class _addnoteformState extends State<addnoteform> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: const [
-        SizedBox(
-          height: 32,
-        ),
-        customtextfield(
-          hint: 'Title',
-        ),
-        SizedBox(
-          height: 16,
-        ),
-        customtextfield(
-          hint: 'Content',
-          lines: 5,
-        ),
-        SizedBox(
-          height: 32,
-        ),
-        custombutton(),
-      ],
+    return Form(
+      child: Column(
+        children: const [
+          SizedBox(
+            height: 32,
+          ),
+          customtextfield(
+            hint: 'Title',
+          ),
+          SizedBox(
+            height: 16,
+          ),
+          customtextfield(
+            hint: 'Content',
+            lines: 5,
+          ),
+          SizedBox(
+            height: 32,
+          ),
+          custombutton(),
+        ],
+      ),
     );
   }
 }
