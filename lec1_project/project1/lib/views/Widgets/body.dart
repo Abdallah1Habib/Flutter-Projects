@@ -15,7 +15,7 @@ class beboBody extends StatelessWidget {
             height: 50,
           ),
           customAppbar(),
-          noteslist(),
+          Expanded(child: noteslist()),
         ],
       ),
     );
