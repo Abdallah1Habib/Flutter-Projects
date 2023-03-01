@@ -27,7 +27,8 @@ class noteItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          color: Colors.yellow, borderRadius: BorderRadius.circular(16)),
+          color: const Color(0xffFFCC80),
+          borderRadius: BorderRadius.circular(16)),
       child: Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
         ListTile(
           title: const Text(
