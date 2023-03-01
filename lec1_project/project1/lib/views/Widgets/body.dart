@@ -15,9 +15,20 @@ class beboBody extends StatelessWidget {
             height: 50,
           ),
           customAppbar(),
-          noteItem(),
+          noteslist(),
         ],
       ),
     );
+  }
+}
+
+class noteslist extends StatelessWidget {
+  const noteslist({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView.builder(itemBuilder: (context,index)){
+      return const noteitem();
+    };
   }
 }
