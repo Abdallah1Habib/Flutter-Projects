@@ -16,7 +16,10 @@ class beboBody extends StatelessWidget {
           SizedBox(
             height: 50,
           ),
-          customAppbar(),
+          customAppbar(
+            title: 'Edit',
+            icon: Icons.check,
+          ),
           Expanded(child: noteslist()),
         ],
       ),
