@@ -9,22 +9,28 @@ class Addnote extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
-      child: Column(
-        children: const [
-          SizedBox(
-            height: 32,
-          ),
-          customtextfield(
-            hint: 'Title',
-          ),
-          SizedBox(
-            height: 16,
-          ),
-          customtextfield(
-            hint: 'Content',
-            lines: 5,
-          ),
-        ],
+      child: SingleChildScrollView(
+        child: Column(
+          children: const [
+            SizedBox(
+              height: 32,
+            ),
+            customtextfield(
+              hint: 'Title',
+            ),
+            SizedBox(
+              height: 16,
+            ),
+            customtextfield(
+              hint: 'Content',
+              lines: 5,
+            ),
+            SizedBox(
+              height: 16,
+            ),
+            custombutton(),
+          ],
+        ),
       ),
     );
   }
