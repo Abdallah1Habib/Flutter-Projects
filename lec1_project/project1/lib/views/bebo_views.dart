@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'Widgets/body.dart';
+import 'Widgets/bottomsheet.dart';
 
 class BeboViews extends StatelessWidget {
   const BeboViews({super.key});
@@ -8,7 +9,13 @@ class BeboViews extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          showModalBottomSheet(
+              context: context,
+              builder: (context) {
+                return Addnote();
+              });
+        },
         child: const Icon(Icons.add),
       ),
       body: const beboBody(),
