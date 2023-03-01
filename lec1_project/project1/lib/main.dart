@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:project1/views/bebo_views.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
-void main() => beboApp();
+void main() async {
+  await Hive.initFlutter();
+  runApp(const beboApp());
+}
 
 class beboApp extends StatelessWidget {
   const beboApp({Key? key}) : super(key: key);
