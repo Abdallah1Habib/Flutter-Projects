@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:project1/views/Widgets/constants.dart';
 
 class customtextfield extends StatelessWidget {
   const customtextfield({super.key});
@@ -8,10 +9,11 @@ class customtextfield extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      cursorColor: primarycolor,
       decoration: InputDecoration(
         border: buildborder(),
         enabledBorder: buildborder(),
-        focusedBorder: buildborder(const Color(0xff62FCD7)),
+        focusedBorder: buildborder(primarycolor),
       ),
     );
   }
