@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:project1/views/Widgets/customappbar.dart';
-import 'package:project1/views/Widgets/noteitem.dart';
 
 import 'listview.dart';
 
@@ -18,7 +17,7 @@ class beboBody extends StatelessWidget {
           ),
           customAppbar(
             title: 'Edit',
-            icon: Icons.check,
+            icon: Icons.search,
           ),
           Expanded(child: noteslist()),
         ],

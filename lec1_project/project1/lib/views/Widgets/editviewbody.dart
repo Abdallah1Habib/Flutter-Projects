@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:project1/views/Widgets/customappbar.dart';
 import 'package:project1/views/Widgets/textfield.dart';
 
